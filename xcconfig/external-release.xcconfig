@@ -2,4 +2,4 @@
 #include "../common-xcconfig/release.xcconfig"
 #include "../common-xcconfig/MacOSX10.5.xcconfig"
 
-ARCHS = ppc ppc64 i386 x86_64
+ARCHS = ppc i386 x86_64
