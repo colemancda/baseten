@@ -20,6 +20,12 @@ CC_ppc64         = $(PLATFORM_DEVELOPER_BIN_DIR)/gcc-$(GCC_VERSION_ppc64)
 CC_x86_64        = $(PLATFORM_DEVELOPER_BIN_DIR)/gcc-$(GCC_VERSION_x86_64)
 CC_armv6         = $(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2
 
+CPP_ppc          = $(PLATFORM_DEVELOPER_BIN_DIR)/cpp-$(GCC_VERSION_ppc)    -isysroot $(SDKROOT)
+CPP_i386         = $(PLATFORM_DEVELOPER_BIN_DIR)/cpp-$(GCC_VERSION_i386)   -isysroot $(SDKROOT)
+CPP_ppc64        = $(PLATFORM_DEVELOPER_BIN_DIR)/cpp-$(GCC_VERSION_ppc64)  -isysroot $(SDKROOT)
+CPP_x86_64       = $(PLATFORM_DEVELOPER_BIN_DIR)/cpp-$(GCC_VERSION_x86_64) -isysroot $(SDKROOT)
+CPP_armv6        = $(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/usr/bin/cpp-4.2
+
 CFLAGS_ppc       = -arch $(ARCH)
 CFLAGS_i386      = -arch $(ARCH)
 CFLAGS_ppc64     = -arch $(ARCH)

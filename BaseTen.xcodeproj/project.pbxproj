@@ -41,7 +41,6 @@
 				537385760DD9FBB7006F965A /* PBXTargetDependency */,
 				5308940B0E43498A0063C5E7 /* PBXTargetDependency */,
 				530894190E4349B80063C5E7 /* PBXTargetDependency */,
-				53BD7A010E092BD5009CAFE6 /* PBXTargetDependency */,
 			);
 			name = "BaseTen + GC";
 			productName = "BaseTen + GC";
@@ -775,13 +774,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 537934A50E54B71B0006EC54;
 			remoteInfo = "PostgreSQL-arm";
-		};
-		53BD7A000E092BD5009CAFE6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 53BD79F70E092ABC009CAFE6;
-			remoteInfo = Documentation;
 		};
 		53D043B111ADB2B400695779 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -2849,11 +2841,6 @@
 			isa = PBXTargetDependency;
 			target = 537934A50E54B71B0006EC54 /* PostgreSQL-arm */;
 			targetProxy = 537934C20E54BDDD0006EC54 /* PBXContainerItemProxy */;
-		};
-		53BD7A010E092BD5009CAFE6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 53BD79F70E092ABC009CAFE6 /* Documentation */;
-			targetProxy = 53BD7A000E092BD5009CAFE6 /* PBXContainerItemProxy */;
 		};
 		53D043B211ADB2B400695779 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

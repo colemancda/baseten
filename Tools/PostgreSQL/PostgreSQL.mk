@@ -29,6 +29,7 @@ build-arch: $(PG_ROOT)
 
 	cd "$(PG_ROOT)" && \
 	CC="$(CC_$(ARCH))" \
+	CPP="$(CPP_$(ARCH))" \
 	CFLAGS="$(CFLAGS_$(ARCH))" \
 	CPPFLAGS="$(CPPFLAGS_$(ARCH))" \
 	LDFLAGS="$(LDFLAGS_$(ARCH))" \
@@ -59,9 +60,9 @@ $(PG_BUILD_DIR)/universal/bin/psql: $(UNIVERSAL_BINS)
 	$(LIPO) $(UNIVERSAL_BINS) -create -output $(PG_BUILD_DIR)/universal/bin/psql
 
 
-$(PG_BUILD_DIR)/universal/postgresql: $(PG_BUILD_DIR)/ppc/include
+$(PG_BUILD_DIR)/universal/postgresql: $(PG_BUILD_DIR)/i386/include
 	$(MKDIR) -p $(PG_BUILD_DIR)/universal/postgresql
-	$(CP) -a $(PG_BUILD_DIR)/ppc/include/* $(PG_BUILD_DIR)/universal/postgresql
+	$(CP) -a $(PG_BUILD_DIR)/i386/include/* $(PG_BUILD_DIR)/universal/postgresql
 
 	$(CP) -a $(SRCROOT)/Sources/pg_config.h $(PG_BUILD_DIR)/universal/postgresql/pg_config.h
 	$(CP) -a $(SRCROOT)/Sources/pg_config.h $(PG_BUILD_DIR)/universal/postgresql/postgresql/server/pg_config.h
